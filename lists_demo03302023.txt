@@ -1,0 +1,22 @@
+# 1. set the users
+users = []
+assert users ==[], f"Expected 'users' to be [] but got: {repr(users)}"
+
+# 2. add users to the list without reassigning the variable
+users.append('kevin')
+users.append('bob')
+users.append('alice')
+
+assert users ==['kevin', 'bob', 'alice'], f"Expected 'users' to be ['kevin', 'bob', 'alice'] but got: {repr(users)}"
+
+# 3. Remove names from the user list without reassigning the variable
+del users[1]
+
+assert users ==['kevin', 'alice'], f"Expected 'users' to be ['kevin', 'alice'] but got: {repr(users)}"
+
+# 4. reverse the users list
+rev_users = list(reversed(users))
+assert rev_users ==['alice', 'kevin'], f"Expected 'users' to be ['kevin', 'alice'] but got: {repr(users)}"
+
+# 5. add and replace user
+users.insert(1, 'melody')
