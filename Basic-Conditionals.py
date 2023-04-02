@@ -1,4 +1,4 @@
-# ??
+# run a basic conditionals command
 
 value = int(input("Enter an integer value: "))
 
